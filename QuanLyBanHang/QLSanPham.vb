@@ -1,9 +1,13 @@
-﻿Imports System.Data.SqlClient
+﻿'Khai báo kết nối tới database
+Imports System.Data.SqlClient
 Imports System.Data.DataTable
 
 Public Class frmQLSP
+    'Gán ketqua đến các dữ liệu bảng trong database
     Dim ketqua As New DataTable
+    'Gán chuỗi kết nối
     Dim constr As String = "workstation id=hungvps02133.mssql.somee.com;packet size=4096;user id=percywangyin_SQLLogin_1;pwd=ryolqj1mrm;data source=hungvps02133.mssql.somee.com;persist security info=False;initial catalog=hungvps02133"
+    'Tạo một public tải dữ liệu từ database
     Public Sub LData()
         Dim con As New SqlConnection(constr)
         Dim sqlAdap As New SqlDataAdapter("select * from SAN_PHAM", con)
@@ -16,6 +20,7 @@ Public Class frmQLSP
         con.Close()
 
     End Sub
+    'Sự kiện form LOAD
     Private Sub frmQLSP_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim con As New SqlConnection(constr)
         Dim sqlAdap As New SqlDataAdapter("Select * from SAN_PHAM", con)
@@ -30,7 +35,7 @@ Public Class frmQLSP
         con.Close()
 
     End Sub
-
+    'Sự kiện cellclick bảng datagribview
     Private Sub dgvSP_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvSP.CellClick
         Dim cell As Integer = dgvSP.CurrentCell.RowIndex
         txtMaSp.Text = dgvSP.Item(0, cell).Value
@@ -40,7 +45,7 @@ Public Class frmQLSP
         nudSoluong.Value = dgvSP.Item(4, cell).Value
         cboDonvi.Text = dgvSP.Item(5, cell).Value
     End Sub
-
+    'Sự kiện button Sửa
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
         Dim con As New SqlConnection(constr)
         con.Open()
@@ -58,7 +63,6 @@ Public Class frmQLSP
 
         Catch ex As Exception
             MessageBox.Show("Dữ liệu có sai sót!")
-
         End Try
         ketqua.Clear()
         dgvSP.DataSource = ketqua
@@ -70,13 +74,8 @@ Public Class frmQLSP
         txtMLSP.Clear()
         nudSoluong.Value = 0
         cboDonvi.Text = ""
-
-
-
-
-
     End Sub
-
+    'Sự kiện button Xóa
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
         Dim con As New SqlConnection(constr)
         con.Open()
@@ -97,7 +96,7 @@ Public Class frmQLSP
         LData()
 
     End Sub
-
+    'Sự kiện button thêm
     Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
         Dim con As New SqlConnection(constr)
         con.Open()
@@ -112,9 +111,9 @@ Public Class frmQLSP
             concommand.Parameters.AddWithValue("@DON_VI", Me.cboDonvi.Text)
             concommand.ExecuteNonQuery()
             con.Close()
-           
+
         Catch ex As Exception
-            
+
             If MessageBox.Show("Vui lòng xem lại dữ liệu!") Then
                 txtMaSp.Focus()
             End If
@@ -132,7 +131,7 @@ Public Class frmQLSP
         cboDonvi.Text = ""
 
     End Sub
-
+    'Sự kiện button thoát
     Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
         Me.Hide()
         frmMain.Show()

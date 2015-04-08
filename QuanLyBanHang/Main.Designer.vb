@@ -26,12 +26,6 @@ Partial Class frmMain
         Me.lbl1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblTenDangnhap = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lbl2 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.mniTrangChu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mniDangXuat = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mniThoat = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mniTroGiup = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mniTTBQ = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnQLNV = New System.Windows.Forms.Button()
         Me.btnQLSP = New System.Windows.Forms.Button()
         Me.btnDangXuat = New System.Windows.Forms.Button()
@@ -40,7 +34,6 @@ Partial Class frmMain
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.StatusStrip1.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -48,7 +41,7 @@ Partial Class frmMain
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lbl1, Me.lblTenDangnhap, Me.lbl2})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 269)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 255)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(353, 22)
         Me.StatusStrip1.TabIndex = 0
@@ -57,7 +50,7 @@ Partial Class frmMain
         'lbl1
         '
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(125, 17)
+        Me.lbl1.Size = New System.Drawing.Size(113, 17)
         Me.lbl1.Text = "Chào mừng tài khoản:"
         '
         'lblTenDangnhap
@@ -68,49 +61,8 @@ Partial Class frmMain
         'lbl2
         '
         Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(131, 17)
+        Me.lbl2.Size = New System.Drawing.Size(118, 17)
         Me.lbl2.Text = " đăng nhập thành công"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniTrangChu, Me.mniTroGiup})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(353, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "mnsMain"
-        '
-        'mniTrangChu
-        '
-        Me.mniTrangChu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniDangXuat, Me.mniThoat})
-        Me.mniTrangChu.Name = "mniTrangChu"
-        Me.mniTrangChu.Size = New System.Drawing.Size(73, 20)
-        Me.mniTrangChu.Text = "Trang chủ"
-        '
-        'mniDangXuat
-        '
-        Me.mniDangXuat.Name = "mniDangXuat"
-        Me.mniDangXuat.Size = New System.Drawing.Size(127, 22)
-        Me.mniDangXuat.Text = "Đăng xuất"
-        '
-        'mniThoat
-        '
-        Me.mniThoat.Name = "mniThoat"
-        Me.mniThoat.Size = New System.Drawing.Size(127, 22)
-        Me.mniThoat.Text = "Thoát"
-        '
-        'mniTroGiup
-        '
-        Me.mniTroGiup.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniTTBQ})
-        Me.mniTroGiup.Name = "mniTroGiup"
-        Me.mniTroGiup.Size = New System.Drawing.Size(64, 20)
-        Me.mniTroGiup.Text = "Trợ giúp"
-        '
-        'mniTTBQ
-        '
-        Me.mniTTBQ.Name = "mniTTBQ"
-        Me.mniTTBQ.Size = New System.Drawing.Size(185, 22)
-        Me.mniTTBQ.Text = "Thông tin bản quyền"
         '
         'btnQLNV
         '
@@ -132,7 +84,7 @@ Partial Class frmMain
         '
         'btnDangXuat
         '
-        Me.btnDangXuat.Location = New System.Drawing.Point(248, 27)
+        Me.btnDangXuat.Location = New System.Drawing.Point(248, 12)
         Me.btnDangXuat.Name = "btnDangXuat"
         Me.btnDangXuat.Size = New System.Drawing.Size(96, 120)
         Me.btnDangXuat.TabIndex = 4
@@ -141,7 +93,7 @@ Partial Class frmMain
         '
         'btnThoat
         '
-        Me.btnThoat.Location = New System.Drawing.Point(248, 153)
+        Me.btnThoat.Location = New System.Drawing.Point(248, 138)
         Me.btnThoat.Name = "btnThoat"
         Me.btnThoat.Size = New System.Drawing.Size(96, 110)
         Me.btnThoat.TabIndex = 5
@@ -161,7 +113,7 @@ Partial Class frmMain
         '
         Me.GroupBox1.Controls.Add(Me.btnQLSP)
         Me.GroupBox1.Controls.Add(Me.btnQLKH)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 153)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 138)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(230, 110)
         Me.GroupBox1.TabIndex = 7
@@ -171,7 +123,7 @@ Partial Class frmMain
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.btnQLNV)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 27)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(230, 120)
         Me.GroupBox2.TabIndex = 8
@@ -182,21 +134,17 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(353, 291)
+        Me.ClientSize = New System.Drawing.Size(353, 277)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnDangXuat)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bàn làm việc"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -205,12 +153,6 @@ Partial Class frmMain
     End Sub
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents lbl1 As System.Windows.Forms.ToolStripStatusLabel
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents mniTrangChu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mniDangXuat As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mniThoat As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mniTroGiup As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mniTTBQ As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnQLNV As System.Windows.Forms.Button
     Friend WithEvents btnQLSP As System.Windows.Forms.Button
     Friend WithEvents lblTenDangnhap As System.Windows.Forms.ToolStripStatusLabel

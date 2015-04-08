@@ -25,9 +25,9 @@ Partial Class frmLogin
         Me.grbDangNhap = New System.Windows.Forms.GroupBox()
         Me.txtMatKhau = New System.Windows.Forms.TextBox()
         Me.txtDangNhap = New System.Windows.Forms.TextBox()
+        Me.btnDangNhap = New System.Windows.Forms.Button()
         Me.lblMatKhau = New System.Windows.Forms.Label()
         Me.lblDangNhap = New System.Windows.Forms.Label()
-        Me.btnDangNhap = New System.Windows.Forms.Button()
         Me.btnHuyBo = New System.Windows.Forms.Button()
         Me.grbDangKy = New System.Windows.Forms.GroupBox()
         Me.btnDangKy = New System.Windows.Forms.Button()
@@ -69,6 +69,15 @@ Partial Class frmLogin
         Me.txtDangNhap.Size = New System.Drawing.Size(222, 20)
         Me.txtDangNhap.TabIndex = 2
         '
+        'btnDangNhap
+        '
+        Me.btnDangNhap.Location = New System.Drawing.Point(91, 84)
+        Me.btnDangNhap.Name = "btnDangNhap"
+        Me.btnDangNhap.Size = New System.Drawing.Size(117, 57)
+        Me.btnDangNhap.TabIndex = 1
+        Me.btnDangNhap.Text = "Đăng nhập"
+        Me.btnDangNhap.UseVisualStyleBackColor = True
+        '
         'lblMatKhau
         '
         Me.lblMatKhau.AutoSize = True
@@ -86,15 +95,6 @@ Partial Class frmLogin
         Me.lblDangNhap.Size = New System.Drawing.Size(63, 13)
         Me.lblDangNhap.TabIndex = 0
         Me.lblDangNhap.Text = "Đăng nhập:"
-        '
-        'btnDangNhap
-        '
-        Me.btnDangNhap.Location = New System.Drawing.Point(91, 84)
-        Me.btnDangNhap.Name = "btnDangNhap"
-        Me.btnDangNhap.Size = New System.Drawing.Size(117, 57)
-        Me.btnDangNhap.TabIndex = 1
-        Me.btnDangNhap.Text = "Đăng nhập"
-        Me.btnDangNhap.UseVisualStyleBackColor = True
         '
         'btnHuyBo
         '
