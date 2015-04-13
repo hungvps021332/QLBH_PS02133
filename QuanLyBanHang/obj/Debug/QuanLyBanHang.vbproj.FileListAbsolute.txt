@@ -1,0 +1,14 @@
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.xml
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmLogin.resources
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Resources.resources
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.vbproj.GenerateResource.Cache
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.xml
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmMain.resources
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmQLSP.resources
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmQLNV.resources
+D:\Hoc tap\INF205_UngDungQL\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmQLKH.resources
